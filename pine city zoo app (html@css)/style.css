@@ -1,0 +1,570 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: helvetica; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; 
+
+}
+
+#main {
+    min-height: 100vh;
+    width: 100%; 
+}
+
+#header{
+    position: fixed;
+     top: 0px;
+    left: 0px;
+    z-index: 500;
+    width: 100%;
+    height: 80px;
+    background-image: url('images/wood-bg.png');
+    background-repeat: repeat-x;
+}
+
+#main {
+    min-height: 100vh;
+    width: 100%;
+}
+
+#header img{
+    display: block;
+    margin: auto;
+    height: 70%;
+    padding-top: 15px;
+}
+
+/*============================= TOP-TABS =================*/
+
+    #tabs-top{
+    /* Keep all existing styles */
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: forestgreen;
+    /* Add these new properties */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: default;/* Disables pointer for whole bar */
+}
+        
+#tabs-top a{
+    font-family: helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: white;
+
+}
+ }
+    
+    /* Keep all existing layout properties below */
+    height: 35px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 12px 20px 0 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+/*==================================MAIN HOME========================*/
+
+
+#main-home{
+   width: 100%;
+   height: cal(100vh-100px);
+   overflow-y: auto;
+   overflow-x: hidden;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start
+    
+}
+
+#main-home img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/*===================BOTTOM TABS=========================*/
+#tabs-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: darkgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#tabs-bottom a {
+    font-family: helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: white;
+    height: 35px;
+    text-align: center;
+    display: inline-block;
+    padding: 12px 20px 0 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+/*========================MAIN (animal page=================*/
+
+#main{
+    margin-top: 119px;
+    background: url('images/map-blur.png');
+    background-repeat: repeat-y;
+}
+
+#content{
+    padding-top: 1px;
+    padding-bottom: 50px;        
+}
+
+/*========================INFO BOX===================*/
+a.info-box{
+    text-decoration: none;
+    background: rgba(255,255,255,.8);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 1px
+}
+
+a.info-box img{
+    height: 70px;
+    margin: 10px;
+    float: left;
+}
+
+.info-box h3{
+    padding: 0;
+    margin-bottom: 0;
+    width: 9-%;
+    color: #572800;
+}
+
+.info-box p{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    color: #131313;
+}
+
+.info-box img.right{
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+}
+/*========================INFO BOX2 GIRAFFE===================*/
+
+a.info-box2{
+    text-decoration: none;
+    background: rgba(255,255,255,.8);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 1px
+}
+
+a.info-box2 img{
+    height: 70px;
+    margin: 10px;
+    float: left;
+}
+
+.info-box2 h3{
+    padding: 0;
+    margin-bottom: 0;
+    width: 9-%;
+    color: #572800;
+}
+
+.info-box2 p{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    color: #131313;
+}
+
+.info-box2 img.right{
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+}
+/*========================INFO BOX3 KOALA===================*/
+
+a.info-box3{
+    text-decoration: none;
+    background: rgba(255,255,255,.8);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 1px
+}
+
+a.info-box3 img{
+    height: 70px;
+    margin: 10px;
+    float: left;
+}
+
+.info-box3 h3{
+    padding: 0;
+    margin-bottom: 0;
+    width: 9-%;
+    color: #572800;
+}
+
+.info-box3 p{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    color: #131313;
+}
+
+.info-box3 img.right{
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+}
+
+/*========================INFO BOX 4 MONKEY===================*/
+
+a.info-box4{
+    text-decoration: none;
+    background: rgba(255,255,255,.8);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 1px
+}
+
+a.info-box4 img{
+    height: 70px;
+    margin: 10px;
+    float: left;
+}
+
+.info-box4 h3{
+    padding: 0;
+    margin-bottom: 0;
+    width: 9-%;
+    color: #572800;
+}
+
+.info-box4 p{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    color: #131313;
+}
+
+.info-box4 img.right{
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+}
+
+/*========================INFO BOX 5 PANDAS ===================*/
+
+a.info-box5{
+    text-decoration: none;
+    background: rgba(255,255,255,.8);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 1px
+}
+
+a.info-box5 img{
+    height: 70px;
+    margin: 10px;
+    float: left;
+}
+
+.info-box5 h3{
+    padding: 0;
+    margin-bottom: 0;
+    width: 9-%;
+    color: #572800;
+}
+
+.info-box5 p{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    color: #131313;
+}
+
+.info-box5 img.right{
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+}
+
+/*========================INFO BOX 6 LIONS ===================*/
+
+a.info-box6{
+    text-decoration: none;
+    background: rgba(255,255,255,.8);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 1px
+}
+
+a.info-box6 img{
+    height: 70px;
+    margin: 10px;
+    float: left;
+}
+
+.info-box6 h3{
+    padding: 0;
+    margin-bottom: 0;
+    width: 9-%;
+    color: #572800;
+}
+
+.info-box6 p{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    color: #131313;
+}
+
+.info-box6 img.right{
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+}
+
+/*========================INFO BOX 7 GORILLAS ===================*/
+
+a.info-box7{
+    text-decoration: none;
+    background: rgba(255,255,255,.8);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 1px
+}
+
+a.info-box7 img{
+    height: 70px;
+    margin: 10px;
+    float: left;
+}
+
+.info-box7 h3{
+    padding: 0;
+    margin-bottom: 0;
+    width: 9-%;
+    color: #572800;
+}
+
+.info-box7 p{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    color: #131313;
+}
+
+.info-box7 img.right{
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+}
+
+/*========================INFO BOX 8 WARTHOG ===================*/
+
+a.info-box8{
+    text-decoration: none;
+    background: rgba(255,255,255,.8);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 1px
+}
+
+a.info-box8 img{
+    height: 70px;
+    margin: 10px;
+    float: left;
+}
+
+.info-box8 h3{
+    padding: 0;
+    margin-bottom: 0;
+    width: 9-%;
+    color: #572800;
+}
+
+.info-box8 p{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    color: #131313;
+}
+
+.info-box8 img.right{
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+}
+
+/*========================INFO BOX 9 GEMBOKS ===================*/
+
+a.info-box9{
+    text-decoration: none;
+    background: rgba(255,255,255,.8);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 1px
+}
+
+.info-box9 img{
+    height: 70px;
+    margin: 10px;
+    float: left;
+}
+
+.info-box9 h3{
+    padding: 0;
+    margin-bottom: 0;
+    width: 9-%;
+    color: #572800;
+}
+
+.info-box9 p{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    color: #131313;
+}
+
+.info-box9 img.right{
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+}
+
+/*========================INFO BOX FULL ELIPH ===================*/
+
+#info-box-full{
+    background: rgba(255 , 255 ,255 ,.8);
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 10px
+    
+}
+
+#info-box-full img{
+    width: 100%;
+    height: 100%;
+}
+
+#info-box-full h3{
+    text-align: center;
+}
+/*============================== WEATHER =======================*/
+
+img.info-box-weather-icon{
+    height: 30px;
+    width: 30px !important;
+    margin: 10 px;
+    float: left;
+    
+}
+
+h1.info-box-weather-icon{
+    font-size: 65px;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    border-top: 1px solid #131313;
+}
+
+img.image{
+    width: 100%;
+}
+
+
+/*============================== FORM =======================*/
+
+input{
+    width: 100%;
+    height: 25px;
+    margin: 12px 0;
+    border: 1px solid #929292;
+}
+
+textarea{
+    width: 100%;
+    height: 65px;
+    margin: 12px 0;
+    border: 1px solid #929292;    
+}
+
+.button{
+    display: block;
+    width: 100%;
+    background-color: forestgreen;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font font-size: 16px;
+    font-weight: 600;
+    margin: 12px 0;
+    padding: 8px 0;
+}

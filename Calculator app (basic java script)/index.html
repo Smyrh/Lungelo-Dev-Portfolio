@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+
+                <td colspan="4">
+                    <input type='text' id="inputBox" value="0"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td onclick="digitBtnPressed(7)">7</td>
+                <td onclick="digitBtnPressed(8)">8</td>
+                <td onclick="digitBtnPressed(9)">9</td>
+                <td onclick="operatorBtnPressed('*')">x</td>
+        </tr>
+
+         <tr>
+                <td onclick="digitBtnPressed(4)">4</td>
+                <td onclick="digitBtnPressed(5)">5</td>
+                <td onclick="digitBtnPressed(6)">6</td>
+                <td onclick="operatorBtnPressed('-')">-</td>
+        </tr>
+         <tr>
+                 <td onclick="digitBtnPressed(1)">1</td>
+                 <td onclick="digitBtnPressed(2)">2</td>
+                 <td onclick="digitBtnPressed(3)">3</td>
+                 <td onclick="operatorBtnPressed('+')">+</td>
+        </tr>
+         <tr>
+              
+                 <td onclick="digitBtnPressed(0)"colspan="1">0</td>
+                 <td onclick="digitBtnPressed('.')">.</td>
+                 <td onclick="backspacePressed()">⌫</td>
+                 <td onclick="operatorBtnPressed('/')">/</td>
+
+        </tr>
+        <tr>
+                 <td colspan='2' onclick="equalsBtnPressed('=')">=</td>
+                 <td onclick="btnACPressed()">AC</td>
+                 <td onclick="operatorBtnPressed('√')">√</td>
+        </tr>
+    
+        </table>
+        <script> 
+           // Calculator state variables
+var newLine = true;
+var value1 = null;
+var currentOperator = null;
+
+// Handle digit button presses (0-9 and .)
+function digitBtnPressed(button) {
+    const input = document.getElementById("inputBox");
+    let currentValue = input.value;
+
+    if (newLine) {
+        // Starting a new number
+        currentValue = (button === '.') ? '0.' : button.toString();
+        newLine = false;
+    } else {
+        // Prevent multiple decimal points
+        if (button === '.' && currentValue.includes('.')) return;
+        
+        // Replace initial zero unless adding decimal
+        if (currentValue === '0' && button !== '.') {
+            currentValue = button.toString();
+        } else {
+            currentValue += button.toString();
+        }
+    }
+    
+    input.value = currentValue;
+}
+
+// Handle operator button presses (+, -, *, /, √)
+function operatorBtnPressed(operator) {
+    if (operator === '√') {
+        // Square root operation
+        const value = parseFloat(document.getElementById("inputBox").value);
+        document.getElementById("inputBox").value = value < 0 ? "Error" : Math.sqrt(value);
+        newLine = true;
+    } else {
+        // Store first value and operator
+        value1 = parseFloat(document.getElementById("inputBox").value);
+        currentOperator = operator;
+        newLine = true;
+    }
+}
+
+// Handle equals button press
+function equalsBtnPressed() {
+    if (currentOperator === null || value1 === null) return;
+    
+    const value2 = parseFloat(document.getElementById("inputBox").value);
+    let result;
+    
+    switch(currentOperator) {
+        case "+":
+            result = value1 + value2;
+            break;
+        case "-":
+            result = value1 - value2;
+            break;
+        case "*":
+            result = value1 * value2;
+            break;
+        case "/":
+            result = value2 === 0 ? "Error" : value1 / value2;
+            break;
+        default:
+            return;
+    }
+    
+    // Display result (trim .0 from whole numbers)
+    document.getElementById("inputBox").value = Number.isInteger(result) ? result : result;
+    newLine = true;
+    currentOperator = null;
+    value1 = null;
+}
+
+// Clear the calculator
+function btnACPressed() {
+    document.getElementById("inputBox").value = "0";
+    newLine = true;
+    value1 = null;
+    currentOperator = null;
+}
+
+// Handle backspace
+function backspacePressed() {
+    const input = document.getElementById("inputBox");
+    let currentValue = input.value;
+    
+    if (currentValue.length > 1) {
+        input.value = currentValue.slice(0, -1);
+    } else {
+        input.value = "0";
+        newLine = true;
+    }
+}
+
+        </script>
+        
+        
+    </body>
+
+
+
+</html>
