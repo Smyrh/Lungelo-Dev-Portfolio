@@ -47,6 +47,7 @@ Interactivity: Dynamic features using JavaScript.
 Back-End: API integration with Java and emerging Python/Django development.
 
 About Me
+
 I’m passionate about creating impactful apps to solve everyday problems. Let’s connect to collaborate!
 
 
