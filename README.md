@@ -1,4 +1,4 @@
-Lungelo-Dev-Portfolio
+Lungelo's-Dev-Portfolio
 
 BRIEF OVERVIEW
 
@@ -51,7 +51,7 @@ Iâ€™m passionate about creating impactful apps to solve everyday problems. Letâ€
 
 
 
-Contact
+Contact: 067 880 9644
 
 GitHub: Smyrh
 
