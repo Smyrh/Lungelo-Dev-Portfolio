@@ -3,7 +3,7 @@ Lungelo's-Dev-Portfolio
 BRIEF OVERVIEW
 
 Welcome to my portfolio! 
-My name is Lungelo Langa, an aspiring certified developer. This repository showcases my skills in HTML, CSS, JavaScript, Java, and python. Explore my projects below!
+My name is Lungelo Langa, an aspiring developer. This repository showcases my skills in HTML, CSS, JavaScript, Java, and python. Explore my projects below!
 
 
 PROJECTS
