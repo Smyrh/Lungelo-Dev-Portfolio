@@ -34,7 +34,7 @@ PROJECTS
 
 
 
-4. Pine City Zoo App: A responsive tour guide web app with HTML and CSS.
+4. Pine City Zoo App: A responsive tour guide web app with HTML and CSS and java script.
 ![Screenshot (66)](https://github.com/user-attachments/assets/6d25072f-4cf3-4512-b324-557823a78360)
 
 
