@@ -48,13 +48,35 @@ PROJECTS
 
 
 
+6. Shopping Cart App: A Python-based shopping application with inventory management. This project enables users to add items from a predefined inventory or input prices for new items,then displaying the cart contents. It runs in the terminal so after downloading the files to test it you'll have to run it in cmd (command prompt).
+![Screenshot (136)](https://github.com/user-attachments/assets/9e5b7e2b-263c-4a01-8887-4cdb74603f2b)
 
 
-SKILLS DEMONSTRATED
 
-Front-End: Responsive design and UI/UX with HTML and CSS.
-Interactivity: Dynamic features using JavaScript.
-Back-End: API integration with Java and emerging Python/Django development.
+
+
+### **Skills Demonstrated**  
+
+#### **Front-End Development**  
+- Built responsive, cross-browser layouts with **semantic HTML5** and **CSS3** (Flexbox/Grid).  
+- Designed intuitive UI/UX for projects like the *Avenger's App* and *Pine City Zoo*.  
+
+#### **Interactivity & APIs**  
+- Implemented dynamic features (e.g., weather alerts, form validation) using **vanilla JavaScript**.  
+- Integrated third-party APIs (e.g., weather data) and handled **async operations** with Fetch.  
+
+#### **Back-End & Python**  
+- Developed a **Java Contacts App** with API endpoints for data persistence.  
+- Created a **Python Shopping Cart** showcasing:  
+  - Object-oriented programming (classes for Cart/Inventory)  
+  - File handling (`inventory.py` for product data)  
+  - Terminal-based user interaction  
+
+#### **Emerging Skills**  
+- Exploring **Django** for full-stack Python development.  
+- Version control proficiency with **Git/GitHub**. 
+
+
 
 About Me
 
